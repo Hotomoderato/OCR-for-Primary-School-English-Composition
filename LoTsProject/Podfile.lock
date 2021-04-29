@@ -1,0 +1,22 @@
+PODS:
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - SQLite.swift
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - SQLite.swift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: c6c24087600962a33517e7c043bfc003d11c791e
+
+COCOAPODS: 1.9.1

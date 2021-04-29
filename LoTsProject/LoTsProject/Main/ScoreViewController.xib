@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreViewController" customModule="LoTsProject" customModuleProvider="target">
+            <connections>
+                <outlet property="commentLabel" destination="ZX4-Hb-vpa" id="wtC-yd-918"/>
+                <outlet property="contentView" destination="xFW-LQ-2SZ" id="pAs-jn-RDr"/>
+                <outlet property="scoreLabel" destination="rA0-Yp-hs4" id="aWy-Ov-dw4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-LQ-2SZ">
+                    <rect key="frame" x="20" y="54" width="374" height="537.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分数" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA0-Yp-hs4">
+                    <rect key="frame" x="20" y="611.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点评" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX4-Hb-vpa">
+                    <rect key="frame" x="20" y="652" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rA0-Yp-hs4" firstAttribute="leading" secondItem="xFW-LQ-2SZ" secondAttribute="leading" id="1e0-Bj-WcA"/>
+                <constraint firstItem="rA0-Yp-hs4" firstAttribute="trailing" secondItem="xFW-LQ-2SZ" secondAttribute="trailing" id="28e-SQ-emi"/>
+                <constraint firstItem="ZX4-Hb-vpa" firstAttribute="trailing" secondItem="rA0-Yp-hs4" secondAttribute="trailing" id="8c8-zm-3V0"/>
+                <constraint firstItem="ZX4-Hb-vpa" firstAttribute="top" secondItem="rA0-Yp-hs4" secondAttribute="bottom" constant="20" id="CbC-b3-loh"/>
+                <constraint firstItem="ZX4-Hb-vpa" firstAttribute="leading" secondItem="rA0-Yp-hs4" secondAttribute="leading" id="EP9-d8-5Ht"/>
+                <constraint firstAttribute="trailingMargin" secondItem="xFW-LQ-2SZ" secondAttribute="trailing" id="ej4-nt-Ksg"/>
+                <constraint firstItem="xFW-LQ-2SZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="fpn-Dg-kf7"/>
+                <constraint firstItem="xFW-LQ-2SZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="jvL-V9-r46"/>
+                <constraint firstItem="xFW-LQ-2SZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="10" id="kpD-PR-OgT"/>
+                <constraint firstItem="rA0-Yp-hs4" firstAttribute="top" secondItem="xFW-LQ-2SZ" secondAttribute="bottom" constant="20" id="we0-wX-MXM"/>
+            </constraints>
+            <point key="canvasLocation" x="-275.36231884057975" y="144.64285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

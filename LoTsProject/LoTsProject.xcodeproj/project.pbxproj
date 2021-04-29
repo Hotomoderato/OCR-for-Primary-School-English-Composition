@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50F915830233C14B75CD5385 /* libPods-LoTsProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C94D827B5B0C75F8227610D /* libPods-LoTsProject.a */; };
+		EF371B1825E88D3D0086E211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B1725E88D3D0086E211 /* AppDelegate.swift */; };
+		EF371B1A25E88D3D0086E211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B1925E88D3D0086E211 /* SceneDelegate.swift */; };
+		EF371B1C25E88D3D0086E211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B1B25E88D3D0086E211 /* ViewController.swift */; };
+		EF371B1F25E88D3D0086E211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF371B1D25E88D3D0086E211 /* Main.storyboard */; };
+		EF371B2125E88D3E0086E211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF371B2025E88D3E0086E211 /* Assets.xcassets */; };
+		EF371B2425E88D3E0086E211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF371B2225E88D3E0086E211 /* LaunchScreen.storyboard */; };
+		EF371B3925E894580086E211 /* Toast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3225E894570086E211 /* Toast+UIView.swift */; };
+		EF371B3A25E894580086E211 /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3425E894570086E211 /* SQLiteDataBase.swift */; };
+		EF371B3B25E894580086E211 /* SQLiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3525E894570086E211 /* SQLiteModel.swift */; };
+		EF371B3C25E894580086E211 /* SQLMirrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3625E894570086E211 /* SQLMirrorModel.swift */; };
+		EF371B3D25E894580086E211 /* SQLiteDataBaseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3725E894570086E211 /* SQLiteDataBaseTool.swift */; };
+		EF371B3E25E894580086E211 /* SQLPropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B3825E894570086E211 /* SQLPropertyModel.swift */; };
+		EF371B4325E8949F0086E211 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B4125E8949F0086E211 /* EntryViewController.swift */; };
+		EF371B4925E894D60086E211 /* LPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B4825E894D60086E211 /* LPUser.swift */; };
+		EF371B4E25E895C60086E211 /* HistoryScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF371B4C25E895C60086E211 /* HistoryScoreCell.swift */; };
+		EF371B4F25E895C60086E211 /* HistoryScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF371B4D25E895C60086E211 /* HistoryScoreCell.xib */; };
+		EFD2CC8625F215AF00AD4412 /* ZYCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2CC8525F215AF00AD4412 /* ZYCrypto.swift */; };
+		EFD2CC8C25F2220B00AD4412 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2CC8A25F2220B00AD4412 /* ScoreViewController.swift */; };
+		EFD2CC8D25F2220B00AD4412 /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD2CC8B25F2220B00AD4412 /* ScoreViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F4AD10B76EF116161669E0A /* Pods-LoTsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoTsProject.release.xcconfig"; path = "Target Support Files/Pods-LoTsProject/Pods-LoTsProject.release.xcconfig"; sourceTree = "<group>"; };
+		3F6F87791C8B1373A55E3891 /* Pods-LoTsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoTsProject.debug.xcconfig"; path = "Target Support Files/Pods-LoTsProject/Pods-LoTsProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7C94D827B5B0C75F8227610D /* libPods-LoTsProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoTsProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF371B1425E88D3D0086E211 /* LoTsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoTsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF371B1725E88D3D0086E211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF371B1925E88D3D0086E211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF371B1B25E88D3D0086E211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF371B1E25E88D3D0086E211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF371B2025E88D3E0086E211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF371B2325E88D3E0086E211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF371B2525E88D3E0086E211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF371B3225E894570086E211 /* Toast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Toast+UIView.swift"; sourceTree = "<group>"; };
+		EF371B3425E894570086E211 /* SQLiteDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
+		EF371B3525E894570086E211 /* SQLiteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteModel.swift; sourceTree = "<group>"; };
+		EF371B3625E894570086E211 /* SQLMirrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLMirrorModel.swift; sourceTree = "<group>"; };
+		EF371B3725E894570086E211 /* SQLiteDataBaseTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataBaseTool.swift; sourceTree = "<group>"; };
+		EF371B3825E894570086E211 /* SQLPropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLPropertyModel.swift; sourceTree = "<group>"; };
+		EF371B4125E8949F0086E211 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		EF371B4825E894D60086E211 /* LPUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPUser.swift; sourceTree = "<group>"; };
+		EF371B4C25E895C60086E211 /* HistoryScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScoreCell.swift; sourceTree = "<group>"; };
+		EF371B4D25E895C60086E211 /* HistoryScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryScoreCell.xib; sourceTree = "<group>"; };
+		EFD2CC8525F215AF00AD4412 /* ZYCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYCrypto.swift; sourceTree = "<group>"; };
+		EFD2CC8825F2163C00AD4412 /* SwiftSimpleCrypto-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftSimpleCrypto-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFD2CC8A25F2220B00AD4412 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		EFD2CC8B25F2220B00AD4412 /* ScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF371B1125E88D3D0086E211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F915830233C14B75CD5385 /* libPods-LoTsProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86C4F6AF88EC2949DB95F918 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F6F87791C8B1373A55E3891 /* Pods-LoTsProject.debug.xcconfig */,
+				1F4AD10B76EF116161669E0A /* Pods-LoTsProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1AFB71DF8E545CD4B4F245F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C94D827B5B0C75F8227610D /* libPods-LoTsProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF371B0B25E88D3C0086E211 = {
+			isa = PBXGroup;
+			children = (
+				EF371B1625E88D3D0086E211 /* LoTsProject */,
+				EF371B1525E88D3D0086E211 /* Products */,
+				86C4F6AF88EC2949DB95F918 /* Pods */,
+				D1AFB71DF8E545CD4B4F245F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF371B1525E88D3D0086E211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B1425E88D3D0086E211 /* LoTsProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF371B1625E88D3D0086E211 /* LoTsProject */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B4025E8946A0086E211 /* Main */,
+				EF371B2F25E894570086E211 /* Others */,
+				EF371B1725E88D3D0086E211 /* AppDelegate.swift */,
+				EF371B1925E88D3D0086E211 /* SceneDelegate.swift */,
+				EF371B1B25E88D3D0086E211 /* ViewController.swift */,
+				EF371B1D25E88D3D0086E211 /* Main.storyboard */,
+				EF371B2025E88D3E0086E211 /* Assets.xcassets */,
+				EF371B2225E88D3E0086E211 /* LaunchScreen.storyboard */,
+				EF371B2525E88D3E0086E211 /* Info.plist */,
+				EFD2CC8825F2163C00AD4412 /* SwiftSimpleCrypto-Bridging-Header.h */,
+			);
+			path = LoTsProject;
+			sourceTree = "<group>";
+		};
+		EF371B2F25E894570086E211 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				EFD2CC8525F215AF00AD4412 /* ZYCrypto.swift */,
+				EF371B3025E894570086E211 /* Toast */,
+				EF371B3325E894570086E211 /* SQ_Encapsulation */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		EF371B3025E894570086E211 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B3125E894570086E211 /* Classes */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		EF371B3125E894570086E211 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B3225E894570086E211 /* Toast+UIView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF371B3325E894570086E211 /* SQ_Encapsulation */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B3425E894570086E211 /* SQLiteDataBase.swift */,
+				EF371B3525E894570086E211 /* SQLiteModel.swift */,
+				EF371B3625E894570086E211 /* SQLMirrorModel.swift */,
+				EF371B3725E894570086E211 /* SQLiteDataBaseTool.swift */,
+				EF371B3825E894570086E211 /* SQLPropertyModel.swift */,
+			);
+			path = SQ_Encapsulation;
+			sourceTree = "<group>";
+		};
+		EF371B4025E8946A0086E211 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B4B25E895970086E211 /* View */,
+				EF371B4625E894B40086E211 /* Model */,
+				EF371B4125E8949F0086E211 /* EntryViewController.swift */,
+				EFD2CC8A25F2220B00AD4412 /* ScoreViewController.swift */,
+				EFD2CC8B25F2220B00AD4412 /* ScoreViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF371B4625E894B40086E211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B4825E894D60086E211 /* LPUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF371B4B25E895970086E211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF371B4C25E895C60086E211 /* HistoryScoreCell.swift */,
+				EF371B4D25E895C60086E211 /* HistoryScoreCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF371B1325E88D3D0086E211 /* LoTsProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF371B2825E88D3E0086E211 /* Build configuration list for PBXNativeTarget "LoTsProject" */;
+			buildPhases = (
+				4198451520860223D397994D /* [CP] Check Pods Manifest.lock */,
+				EF371B1025E88D3D0086E211 /* Sources */,
+				EF371B1125E88D3D0086E211 /* Frameworks */,
+				EF371B1225E88D3D0086E211 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoTsProject;
+			productName = LoTsProject;
+			productReference = EF371B1425E88D3D0086E211 /* LoTsProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF371B0C25E88D3C0086E211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					EF371B1325E88D3D0086E211 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = EF371B0F25E88D3C0086E211 /* Build configuration list for PBXProject "LoTsProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF371B0B25E88D3C0086E211;
+			productRefGroup = EF371B1525E88D3D0086E211 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF371B1325E88D3D0086E211 /* LoTsProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF371B1225E88D3D0086E211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF371B2425E88D3E0086E211 /* LaunchScreen.storyboard in Resources */,
+				EF371B2125E88D3E0086E211 /* Assets.xcassets in Resources */,
+				EF371B4F25E895C60086E211 /* HistoryScoreCell.xib in Resources */,
+				EFD2CC8D25F2220B00AD4412 /* ScoreViewController.xib in Resources */,
+				EF371B1F25E88D3D0086E211 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4198451520860223D397994D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoTsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF371B1025E88D3D0086E211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF371B3D25E894580086E211 /* SQLiteDataBaseTool.swift in Sources */,
+				EF371B4325E8949F0086E211 /* EntryViewController.swift in Sources */,
+				EF371B3925E894580086E211 /* Toast+UIView.swift in Sources */,
+				EF371B4E25E895C60086E211 /* HistoryScoreCell.swift in Sources */,
+				EF371B1C25E88D3D0086E211 /* ViewController.swift in Sources */,
+				EF371B4925E894D60086E211 /* LPUser.swift in Sources */,
+				EF371B3C25E894580086E211 /* SQLMirrorModel.swift in Sources */,
+				EFD2CC8C25F2220B00AD4412 /* ScoreViewController.swift in Sources */,
+				EF371B1825E88D3D0086E211 /* AppDelegate.swift in Sources */,
+				EF371B3E25E894580086E211 /* SQLPropertyModel.swift in Sources */,
+				EF371B1A25E88D3D0086E211 /* SceneDelegate.swift in Sources */,
+				EF371B3A25E894580086E211 /* SQLiteDataBase.swift in Sources */,
+				EFD2CC8625F215AF00AD4412 /* ZYCrypto.swift in Sources */,
+				EF371B3B25E894580086E211 /* SQLiteModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF371B1D25E88D3D0086E211 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF371B1E25E88D3D0086E211 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF371B2225E88D3E0086E211 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF371B2325E88D3E0086E211 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF371B2625E88D3E0086E211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF371B2725E88D3E0086E211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF371B2925E88D3E0086E211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6F87791C8B1373A55E3891 /* Pods-LoTsProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDJ5PGGR82;
+				INFOPLIST_FILE = LoTsProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.LoTsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoTsProject/SwiftSimpleCrypto-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF371B2A25E88D3E0086E211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4AD10B76EF116161669E0A /* Pods-LoTsProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDJ5PGGR82;
+				INFOPLIST_FILE = LoTsProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdk.LoTsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoTsProject/SwiftSimpleCrypto-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF371B0F25E88D3C0086E211 /* Build configuration list for PBXProject "LoTsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF371B2625E88D3E0086E211 /* Debug */,
+				EF371B2725E88D3E0086E211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF371B2825E88D3E0086E211 /* Build configuration list for PBXNativeTarget "LoTsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF371B2925E88D3E0086E211 /* Debug */,
+				EF371B2A25E88D3E0086E211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF371B0C25E88D3C0086E211 /* Project object */;
+}

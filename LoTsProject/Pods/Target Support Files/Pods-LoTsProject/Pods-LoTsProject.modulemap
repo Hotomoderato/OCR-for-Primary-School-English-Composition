@@ -1,0 +1,6 @@
+module Pods_LoTsProject {
+  umbrella header "Pods-LoTsProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

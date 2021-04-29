@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G7Z-KK-HsZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoTsProject-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoTsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54d-cw-eFw">
+                                <rect key="frame" x="182.5" y="454.5" width="49" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="成绩"/>
+                                <connections>
+                                    <action selector="resultsClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pqq-95-SFU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-c1-cwu">
+                                <rect key="frame" x="182.5" y="363.5" width="49" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="评分"/>
+                                <connections>
+                                    <action selector="errorCorrectionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKE-uw-jqU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76D-Vb-d2n">
+                                <rect key="frame" x="182.5" y="272.5" width="49" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="识别"/>
+                                <connections>
+                                    <action selector="identifyClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIR-z3-clw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOV-a6-5oF">
+                                <rect key="frame" x="107" y="575.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0fD-2J-CHX"/>
+                                    <constraint firstAttribute="width" constant="200" id="G7m-5t-a0h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vOV-a6-5oF" firstAttribute="top" secondItem="54d-cw-eFw" secondAttribute="bottom" constant="80" id="0V9-4A-t7U"/>
+                            <constraint firstItem="n0b-c1-cwu" firstAttribute="top" secondItem="76D-Vb-d2n" secondAttribute="bottom" constant="50" id="52f-ye-3bu"/>
+                            <constraint firstItem="54d-cw-eFw" firstAttribute="top" secondItem="n0b-c1-cwu" secondAttribute="bottom" constant="50" id="GTL-Av-SXm"/>
+                            <constraint firstItem="54d-cw-eFw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Noi-ky-Fym"/>
+                            <constraint firstItem="vOV-a6-5oF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O6A-B3-u0g"/>
+                            <constraint firstItem="n0b-c1-cwu" firstAttribute="centerX" secondItem="54d-cw-eFw" secondAttribute="centerX" id="a1l-fv-hW4"/>
+                            <constraint firstItem="54d-cw-eFw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="iO1-bQ-QZr"/>
+                            <constraint firstItem="76D-Vb-d2n" firstAttribute="centerX" secondItem="n0b-c1-cwu" secondAttribute="centerX" id="u2S-Gp-OUW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LoTsProject" id="IJ4-Wo-NWZ"/>
+                    <connections>
+                        <outlet property="showImaeView" destination="vOV-a6-5oF" id="b5h-nf-r6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ff4-Mt-740">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G7Z-KK-HsZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZUf-CK-NST">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gud-zm-AoQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5DL-Pg-apl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
